@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiramisu</title>
+    <style>
+        .h3{
+           width: auto; background-color: rgb(231, 10, 10);
+           color: white;
+           font-size: 20px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .patro {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <table align="center" border="0" width="900">
@@ -73,29 +86,60 @@
             </dl>
             </td>
         </tr>
-        <tr></tr>
-            <td>
-        <form action="#">
-        <fieldset><legend style="color:blue">Kyçuni ketu</legend>
-        <input type="text" name="username" placeholder="Enter your name" id="username" required>
-        <br>
-        <input type="password" name="" id="" placeholder="Password" required>
-        <br> <br>
-        <b>Please select your gender!<b>
-            <br>
-        <label for="type">Male</label>
-        <input type="radio" name="Gender" id="Male">
-        <br>
-        <label for="type">Female</label>
-        <input type="radio" name="Gender" id="Female">
-        <br> <br>
-        <input type="Submit" value="Log in" >
-        <input type="Reset" value="reset">
-        <br>
-        <br> 
-        </form></fieldset>
+        
+<tr>
+    <td>
+        <b class="h3">Si gatuhet Teramisu!</b>
+        <video margin="auto" width="800px"controls autoplay muted src="trs.mp4">Si gatuhet teramisu!</video>
     </td>
+       <tr>
+        <td>
+            <b class="patro">Ketu gjindet lokali jonë: </b>
+            <iframe width="800px"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.881535055223!2d20.865311614979355!3d42.896446109051766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135345ed9dfa771f%3A0x91e6d13fe57ac226!2sTop%20Cake!5e0!3m2!1sen!2s!4v1664230549332!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </td>
 </tr>
-    </table>
+<tr>
+    <td>
+<form action="./Your order.html" method="get">
+<fieldset width="300"><legend style="color:blue"><b>Zgjidhni porosin tuaj:</b> </legend>
+<input type="text" name="username" placeholder="Enter your Name:" id="username" required>
+<br>
+<input type="tel" name="" id="" placeholder="Enter your Phone Number:" required>
+<br>
+<input type="text" name="Address" placeholder="Enter your Address" id="Address" required> 
+<br>
+<br>
+<b>Please select your gender!<b>
+    <br>
+<label for="type">Male</label>
+<input type="radio" name="Gender" id="Male">
+<br>
+<label for="type">Female</label>
+<input type="radio" name="Gender" id="Female"> 
+<br><br>
+     <b>Please select a cake to order!</b>
+     <br>
+     <input list="types" placeholder="Please select a cake!">
+     <datalist id="types">
+     <option value="Snickers Cake">Snickers Cake</option>
+     <option value="Oreo Cake">Oreo Cake</option>
+     <option value="Banana Cake">Banana Cake</option>
+    </datalist>
+    <br><br>
+    <b>Please select how many cakes you want!</b>
+    <br>
+    <input type="number" name="" id="Cakes no" placeholder="Enter no" required
+    min="1"  max="10"  >
+    <br> <br>
+<input type="Submit" value="Order">
+<input type="Reset" value="Reset">
+<br>
+<br>
+</td>
+</tr>
+</fieldset>
+</form>
+</table>
 </body>
 </html>
