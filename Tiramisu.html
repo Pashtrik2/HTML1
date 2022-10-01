@@ -60,13 +60,38 @@
             background-color:rgb(98, 57, 37);
             width: fit-content; 
         }
+        .menu{
+            display: inline;
+        }
+        ul li  {
+            display: inline;
+        
+            empty-cells: hide;
+        }
+     ul li ul {
+        visibility: hidden;
+     }
+     ul li:hover ul{
+        visibility: visible;
+        display: inline;
+     }
     </style>
 </head>
 <body>
 <div>
 <h1 align="center">Tiramisu</h1>
-<p  align="right"><a href="https://www.amazon.com/Tiramisu-Cake/s?k=Tiramisu+Cake">Buy on Amazon</a></p>
-<p class="ad" align="left">Posted on <i> June 13,2019</i> / posted in <a href="https://tastesbetterfromscratch.com/easy-tiramisu/">No-Bake-Recipes</a></p>
+<ul>
+    <li>Home</li><br>
+    <li>Contact<br>
+    <li>Partners
+    <ul> <br>
+        <li><a href="https://www.instagram.com/familyagushollisweets/" target="_blank">Agusholli</a></li><br>
+        <li><a href="https://fibellosweets.com/" target="_blank">Fibello</a></li>
+    </li>
+    </ul>
+</ul>
+<p  align="right"><a href="https://www.amazon.com/Tiramisu-Cake/s?k=Tiramisu+Cake" target="_blank">Buy on Amazon</a></p>
+<p class="ad" align="left">Posted on <i> June 13,2019</i> / posted in <a href="https://tastesbetterfromscratch.com/easy-tiramisu/" target="_blank">No-Bake-Recipes</a></p>
       <img width="300px" src="s1.jpg" alt="">
        <img width="300px" src="s2.jpg" alt="">
         <img width="300px" src="s3.jpg" alt="">
