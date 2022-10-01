@@ -64,16 +64,18 @@
             display: inline;
         }
         ul li  {
-            display: inline;
-        
-            empty-cells: hide;
-        }
+        display: inline;
+     }
      ul li ul {
         visibility: hidden;
      }
      ul li:hover ul{
         visibility: visible;
         display: inline;
+     }
+     .ingr li {
+        display: block;
+        list-style: '🍮' inside;
      }
     </style>
 </head>
@@ -102,7 +104,7 @@
     
     There are many variations of the tiramisu recipe. The following is the authentic Italian tiramisu recipe, the one you make on Sundays, the one you eat when you come to Italy, made with eggs and mascarpone cheese.</p>
 </section>
-<ul>
+<ul class="ingr">
 <h2>Ingredients</h2>
 <li>400ml double cream</li>
 <li>250g mascarpone</li>
