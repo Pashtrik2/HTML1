@@ -8,8 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @font-face {
-            font-family: 'Lobster', cursive;;
-            src: url();
+            font-family: 'Lobster', cursive;
         }
         body{
             margin: 0px 190px;
@@ -17,8 +16,7 @@
             background-image: url("tira3.jpg");
             background-size: auto;
             background-repeat: no-repeat;
-            background-position: center; 
-            
+            background-position: center;  
            }
         h1{
             font-family: 'Lobster';
@@ -36,14 +34,14 @@
          text-decoration:none;
          background-color: rgb(98, 57, 37);
         }
-        section{
-            background-color:rgb(98, 57, 37);
-            opacity: 0.8;
+        .tira{
+            background-color:rgb(98, 57, 37,0.8);
+            overflow: auto;
         }
         h3{
-            background-color:rgb(98, 57, 37);
+            background-color:rgb(98, 57, 37,0.8);
             width: fit-content;
-            opacity: 0.8;
+       
         }
         .ans{
             background-color:rgb(98, 57, 37);
@@ -63,47 +61,85 @@
         .menu{
             display: inline;
         }
-        ul li  {
-        display: inline;
-     }
-     ul li ul {
+        .logos{
+            width: 135px;
+        }
+        header{
+            width: 960px;
+            height: 90px;
+            background-color: rgb(98, 57, 37);
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; 
+            top: 0px;
+        }
+        .logo{
+            width: 135px;
+        }
+        .logot{
+        width: 500px;
+        padding: 0px;
+        list-style-type: none;
+        background-color: rgb(98, 57, 37);
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        }
+
+        .as{
+            background-color: white;
+            border: 1px solid white;
+            color: black;
+        }
+        .asa {
+            background-color: white;
+            border: 1px solid white;
+            color: black;
+        }
+        .asd{
+            background-color: white;
+            border: 1px solid white;
+            color: black;
+        }
+        ul li ul{
         visibility: hidden;
-     }
-     ul li:hover ul{
+        }
+        ul li:hover ul{
         visibility: visible;
-        display: inline;
-     }
-     .ingr li {
-        display: block;
-        list-style: '🍮' inside;
-     }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <img src="icon.jpg" alt="" class="logos">
+        <h1>Tiramisu</h1>
+        <ul class="logot">
+        <li ><a href="" class="as">Home</a></li>
+        <li><a href="" class="asd">Contact</a></li>
+        <li><a href="" class="asa">Partners</a>
+        <ul>
+            <li> <a href="">Agusholli</a> </li>
+            <li> <a href="">Fibello</a> </li>
+        </ul>
+        </li>
+        </ul>
+    </header>
 <div>
-<h1 align="center">Tiramisu</h1>
-<ul>
-    <li>Home</li><br>
-    <li>Contact<br>
-    <li>Partners
-    <ul> <br>
-        <li><a href="https://www.instagram.com/familyagushollisweets/" target="_blank">Agusholli</a></li><br>
-        <li><a href="https://fibellosweets.com/" target="_blank">Fibello</a></li>
-    </li>
-    </ul>
-</ul>
 <p  align="right"><a href="https://www.amazon.com/Tiramisu-Cake/s?k=Tiramisu+Cake" target="_blank">Buy on Amazon</a></p>
 <p class="ad" align="left">Posted on <i> June 13,2019</i> / posted in <a href="https://tastesbetterfromscratch.com/easy-tiramisu/" target="_blank">No-Bake-Recipes</a></p>
       <img width="300px" src="s1.jpg" alt="">
        <img width="300px" src="s2.jpg" alt="">
         <img width="300px" src="s3.jpg" alt="">
-        <section>
-<p class="img1"><b> Tiramisu </b> an Italian dessert made of savoiardi ladyfingers soaked in coffee, arranged in layers and filled with a cream made with mascarpone and eggs.
+       
+<p class="tira"><b> Tiramisu </b> an Italian dessert made of savoiardi ladyfingers soaked in coffee, arranged in layers and filled with a cream made with mascarpone and eggs.
 
     Tiramisu is one of the most famous Italian dessert in the world, born in Treviso (a lovely town near Venice), delicious and easy to make.
     
     There are many variations of the tiramisu recipe. The following is the authentic Italian tiramisu recipe, the one you make on Sundays, the one you eat when you come to Italy, made with eggs and mascarpone cheese.</p>
-</section>
+
 <ul class="ingr">
 <h2>Ingredients</h2>
 <li>400ml double cream</li>
@@ -159,9 +195,6 @@
    <dt>What size pan to use?</dt>
    <dd>This particular tiramisu recipe yields a large volume and the pan will be very full. Make sure your pan is large enough. I recommend a 9x13 inch dish with at least a 12-14 cup capacity. This 4 quart dish is wonderful too.</dd>
 </dl>
-</div>
-</body>
-</html>
 </div>
 </body>
 </html>
